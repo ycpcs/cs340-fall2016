@@ -34,7 +34,7 @@ CS 201
 Textbook
 --------
 
-Bruce A. Tate, [Seven Languages in Seven Weeks](http://pragprog.com/book/btlang/seven-languages-in-seven-weeks), ISBN 978-1-93435-659-3.
+Daniel Higginbotham, [Clojure for the Brave and True](https://www.nostarch.com/clojure), ISBN 978-1-59327-591-4.
 
 Course Structure and Expectations
 ---------------------------------
