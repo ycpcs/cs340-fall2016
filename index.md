@@ -20,4 +20,4 @@ This is the website for CS 340, Fall 2016 at York College.  All information abou
 
 ## News
 
-* **Aug 30** &mdash; Welcome back!
+* **Aug 30** &mdash; Welcome back!  [Assignment 1](assign/assign01.html) is due Tuesday, Sept 9th by 11:59 PM.
