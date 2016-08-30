@@ -12,7 +12,7 @@ Staff:
 
 > Instructor | Email | Office hours (KEC 113)
 > ---------- | ----- | ----------------------
-> [David Hovemeyer](http://faculty.ycp.edu/~dhovemey) | [dhovemey@ycp.edu](mailto:dhovemey@ycp.edu) | M/W/F 11-12, T/Th 12:30-1:30, or by arrangement
+> [David Hovemeyer](http://faculty.ycp.edu/~dhovemey) | [dhovemey@ycp.edu](mailto:dhovemey@ycp.edu) | MWF 11-12, T/Th 2:00-3:00, or by arrangement
 
 Meeting times:
 
