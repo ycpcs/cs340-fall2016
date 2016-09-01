@@ -10,7 +10,7 @@ This page lists the schedule for the course.  Note that there may be minor chang
 Date | Readings
 ---- | --------
 Aug 30 | [Lecture 1: Syntax, Regular Languages and Regular Expressions](lectures/lecture01.html)
-Aug 1 | [Lecture 2: Finite Automata, Lexical Analysis](lectures/lecture02.html)
+Sep 1 | [Lecture 2: Finite Automata, Lexical Analysis](lectures/lecture02.html)
 Sep 6 | [Lecture 3: Designing Finite Automata, Eliminating Nondeterminism](lectures/lecture03.html)
 Sep 8 | [Lecture 4: Context-Free Languages, Parsing, Ambiguity](lectures/lecture04.html)
 Sep 13 | [Lecture 5: Eliminating Ambiguity, Recursive Descent Parsing](lectures/lecture05.html)
