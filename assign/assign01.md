@@ -5,12 +5,49 @@ title: "Assignment 1: Regular expressions"
 
 **Due: Tuesday, Sep 6th by 11:59 PM**
 
-Regular Expressions
-===================
+# Regular Expressions
 
 For each language below, create a regular expression that generates all of the strings in the language, and does not generate any strings not in the language.
 
 In the language descriptions below, *ε* (epsilon) denotes the empty string.
+
+# Strategy
+
+Sometimes it isn't obvious how to create a single regular expression that generates precisely the language you want.
+
+The good news is that you don't need to tackle the entire language all at once.  An excellent strategy is to work on a regular expression that generates *part* of the language.  Then work on another, and so on, until together they generate all of the strings in the language.  Then, you can use the alternation operator (\|) to combine them.
+
+For example, let's say you want a regular expression for language *Z*.  <i>R<sub>Z</sub></i> is the regular expression which will generate the language *Z*.  But you don't yet know what <i>R<sub>Z</sub></i> should be.
+
+So, you create regular expressions <i>R<sub>P</sub></i>, <i>R<sub>Q</sub></i>, and <i>R<sub>R</sub></i>, which generate languages *P*, *Q*, and *R*, such that
+
+> *Z* = *P* ∪ *Q* ∪ *R*
+
+That means that <i>R<sub>Z</sub></i> should be
+
+> <i>R<sub>P</sub></i> \| <i>R<sub>Q</sub></i> \| <i>R<sub>R</sub></i>
+
+Note that for this example, it is not necessary for languages *P*, *Q*, and *R* to be non-overlapping.  In other words, there might be some strings that are in more than one of *P*, *Q*, and *R*.  That is fine!  The only requirement is that all of the strings in *Z* are in the union of *P*, *Q*, and *R*.
+
+As a specific example, let's consider Language 2 from [Lab 1](../labs/lab01.html), which is the language of all strings of strictly alternating **a**'s and **b**'s.  Let's break this language down into four subsets:
+
+* Even length strings starting with **a**
+* Odd length strings starting with **a**
+* Even length strings starting with **b**
+* Odd length strings starting with **b**
+
+Here are four regular expressions which generate each of these subsets:
+
+* (ab)\*
+* (ab)\*a
+* (ba)\*
+* (ba)\*b
+
+Now we can put them all together as a single regular expression:
+
+> (ab)\*\|(ab)\*a\|(ba)\*\|(ba)\*b
+
+# Languages
 
 Language 1
 ----------
