@@ -55,3 +55,5 @@ See [Lecture 4](../lectures/lecture04.html) for examples of derivations.  Each s
 ## Before you leave
 
 Ask the instructor to check your work.
+
+You can also check out a [solution](lab04soln.html), although note that this is definitely not the *only* solution.
