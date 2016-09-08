@@ -12,7 +12,7 @@ The single most important thing to keep in mind when you are creating a finite a
 
 The idea is that when the automaton is in a particular state, we know something specific that must be true of the part of the input string that has been processed by the automaton.
 
-For example, say we want to construct a finite automaton to recognize all strings over the alphabet {a, b} which contain an odd number of b's. There is one property that the finite automaton needs to keep track of: whether the number of b's it has seen so far is even or odd. In the start state, we know that the automaton has not seen any symbols, and thus the number of b's it has seen is even:
+For example, say we want to construct a finite automaton to recognize all strings over the alphabet {a, b} which contain an even number of b's. There is one property that the finite automaton needs to keep track of: whether the number of b's it has seen so far is even or odd. In the start state, we know that the automaton has not seen any symbols, and thus the number of b's it has seen is even:
 
 > ![image](img/evenBs1.png)
 
