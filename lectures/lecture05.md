@@ -65,7 +65,7 @@ Recursive Descent
 
 Recursive descent is a simple parsing algorithm that is very easy to implement. It is a *top-down* parsing algorithm because it builds the parse tree from the top (the start symbol) down.
 
-The main limitation of recursive descent parsing (and all top-down parsing algorithms in general) is that they only work on grammars with certain properties. For example, if a grammar contains any *left recursion*, recursive descent parsing doesn't work.
+The main limitation of recursive descent parsing (and top-down parsing algorithms in general) is that they only work on grammars with certain properties. For example, if a grammar contains any *left recursion*, recursive descent parsing doesn't work.
 
 Eliminating Left Recursion
 --------------------------
