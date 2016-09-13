@@ -170,7 +170,7 @@ Note that left-factoring isn't always necessary.  If the common prefix of two or
 Recursive Descent Parsing
 -------------------------
 
-Once you have a non-left-recursive, left-factored grammar, recursive descent parsing is extremely easy to implement.
+Once you have a non-left-recursive, left-factored grammar, recursive descent parsing is (generally) easy to implement.
 
 Each nonterminal symbol has a *parse function*. The purpose of the parse function for a nonterminal symbol is to choose and apply one of the productions having that nonterminal symbol on the left hand side. The parse function must ensure that the production chosen will lead to a valid derivation for the input string (if one exists).
 
