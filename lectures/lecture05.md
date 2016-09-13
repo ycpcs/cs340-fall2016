@@ -165,6 +165,8 @@ We can left-factor the grammar by making a new nonterminal to represent the alte
 
 Our non-left-recursive expression grammar is already left-factored, so we don't need to change it.
 
+Note that left-factoring isn't always necessary.  If the common prefix of two or more productions consists of only terminal symbols, then the parser can use the lexical analyzer to look ahead by more than one terminal symbol, and wait until a distinguishing terminal symbol is seen to decide which production to apply.
+
 Recursive Descent Parsing
 -------------------------
 
