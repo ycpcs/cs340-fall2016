@@ -14,9 +14,9 @@ Labs are not graded, and you do not need to submit them.  However, they are very
 > Tues, Sep 6th | [Lab 3: Eliminating nondeterminism](lab03.html) | n/a
 > Thurs, Sep 8th | [Lab 4: Context-free grammars](lab04.html) | n/a
 > Tues, Sep 13th | [Lab 5: Recursive Descent Parsing](lab05.html) | [RecursiveDescentJava.zip](../lectures/RecursiveDescentJava.zip)
+> Thurs, Sep 15th | [Lab 6: Precedence Climbing](lab06.html) | [PrecedenceClimbingJava.zip](../lectures/PrecedenceClimbingJava.zip)
 
 <!--
-> Thurs, Sep 17th | [Lab 5: Precedence Climbing](lab05.html) | [PrecedenceClimbingJava.zip](../lectures/PrecedenceClimbingJava.zip), [PrecedenceClimbingSoln.zip](../lectures/PrecedenceClimbingSoln.zip) (solution)
 > Tues, Sep 22nd | [Lab 6: Turing Machines](lab06.html) | n/a
 > Tues, Sep 29th | [Lab 7: Clojure Exercises I](lab07.html) | n/a
 > Tues, Oct 6th | [Lab 8: Clojure Exercises II](lab08.html) | n/a

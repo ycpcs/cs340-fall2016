@@ -20,6 +20,7 @@ This is the website for CS 340, Fall 2016 at York College.  All information abou
 
 ## News
 
+* **Sep 15** &mdash; [Assignment 3](assign/assign03.html) is due on Friday, Sept 23rd by 11:59 PM.
 * **Sep 2** &mdash; [Assignment 2](assign/assign02.html) is due on Friday, Sept 16th by 11:59 PM.
 * **Sep 2** &mdash; A ["Strategy" section](lectures/lecture01.html#strategy) has been added to Lecture 1.  This should be helpful for [Assignment 1](assign/assign01.html).
 * **Sep 1** &mdash; [Assignment 1](assign/assign01.html) will be due on Friday, Sept 9th by 11:59 PM.  (The website originally said "Tuesday, Sept 9th", which doesn't exist, so we'll go with Friday, Sept 9th, which does.)
