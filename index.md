@@ -20,6 +20,7 @@ This is the website for CS 340, Fall 2016 at York College.  All information abou
 
 ## News
 
+* **Sep 20** &mdash; Exam 1 will take place in class on Thursday, Sept 29th.  It will be open book and open notes.  If you would like to use the lecture notes during the exam, print them out before the exam.  A practice exam is available on the [Practice Exams](practice/index.html) page.
 * **Sep 15** &mdash; [Assignment 3](assign/assign03.html) is due on Friday, Sept 23rd by 11:59 PM.
 * **Sep 2** &mdash; [Assignment 2](assign/assign02.html) is due on Friday, Sept 16th by 11:59 PM.
 * **Sep 2** &mdash; A ["Strategy" section](lectures/lecture01.html#strategy) has been added to Lecture 1.  This should be helpful for [Assignment 1](assign/assign01.html).
