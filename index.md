@@ -20,6 +20,7 @@ This is the website for CS 340, Fall 2016 at York College.  All information abou
 
 ## News
 
+* **Sep 28** &mdash; Solutions to the [Regular Language Practice Problems](practice/reglang.html) have been posted. (Click the link and scroll to the bottom of the page.)
 * **Sep 27** &mdash; [Regular Language Practice Problems](practice/reglang.html) have been posted on the [Practice Exams](practice/index.html) page.  Solutions will be posted soon.
 * **Sep 26** &mdash; A solution to the first practice exam is available on the [Practice Exams](practice/index.html) page.
 * **Sep 20** &mdash; Exam 1 will take place in class on Thursday, Sept 29th.  It will be open book and open notes.  If you would like to use the lecture notes during the exam, print them out before the exam.  A practice exam is available on the [Practice Exams](practice/index.html) page.

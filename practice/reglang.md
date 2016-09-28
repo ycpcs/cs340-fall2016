@@ -39,4 +39,6 @@ Examples of strings not in the language: ε, aa, abba, abbbabab
 
 ## Solutions
 
-Coming soon.
+Regular expressions: [reglang-regex.txt](reglang-regex.txt).  Note that `e` is used to mean epsilon.
+
+DFAs: [reglang-fa1.jff](reglang-fa1.jff), [reglang-fa2.jff](reglang-fa2.jff), [reglang-fa3.jff](reglang-fa3.jff), [reglang-fa4.jff](reglang-fa4.jff), [reglang-fa5.jff](reglang-fa5.jff).
