@@ -5,6 +5,8 @@ title: "Schedule"
 
 This page lists the schedule for the course.  Note that there may be minor changes: any changes will be announced in class and posted here.
 
+*CBT* is [Clojure for the Brave and True](https://www.nostarch.com/clojure).
+
 **Important**: Do the readings in advance!
 
 Date | Readings
@@ -19,9 +21,10 @@ Sep 20 | [Lecture 7: Turing Machines](lectures/lecture07.html)
 Sep 22 | [Lecture 8: Decidability and the Halting Problem](lectures/lecture08.html)
 Sep 27 | [Lecture 9: Decidability of Regular Languages](lectures/lecture09.html)
 Sep 29 | **Exam 1** (open book, open notes)
-Oct 4 | 
-Oct 6 | 
-Oct 11 | 
+Oct 4 | *CBT*, Chapters 1&ndash;2, [Lecture 10: Why Clojure?](lectures/lecture10.html)
+Oct 6 | *CBT*, Chapter 3, pages 35&ndash;48, [Lecture 11: Clojure Data Structures](lectures/lecture11.html)
+Oct 6 | *CBT*, Chapter 3, pages 48&ndash;69
+Oct 11 | *CBT*, Chapter 4, pages 71&ndash;84, [Lecture 13: Map, filter, reduce, and higher-order functions](lectures/lecture13.html)
 Oct 13 | 
 Oct 18 | Fall break, no class
 Oct 20 | 

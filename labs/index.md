@@ -17,6 +17,7 @@ Labs are not graded, and you do not need to submit them.  However, they are very
 > Thurs, Sep 15th | [Lab 6: Precedence Climbing](lab06.html) | [PrecedenceClimbingJava.zip](../lectures/PrecedenceClimbingJava.zip)
 > Tues, Sep 20th | [Lab 7: Turing Machines](lab07.html) | n/a
 > Tues, Sep 27th | [Lab 8: Exam Review](lab08.html) | [Practice Exam 1](../practice/cs340-fall2015-exam01.pdf)
+> Tues, Oct 4th | [Lab 9: Clojure Exercises](lab09.html) | n/a
 
 <!--
 > Tues, Sep 29th | [Lab 7: Clojure Exercises I](lab07.html) | n/a

@@ -20,6 +20,7 @@ This is the website for CS 340, Fall 2016 at York College.  All information abou
 
 ## News
 
+* **Oct 3** &mdash; The [Schedule](schedule.html) has been updated.
 * **Sep 28** &mdash; The solution to the first practice exam has been updated to correct two mistakes (a mislabeled transition in Question 5 and a missing production in Question 6.)
 * **Sep 28** &mdash; Solutions to the [Regular Language Practice Problems](practice/reglang.html) have been posted. (Click the link and scroll to the bottom of the page.)
 * **Sep 27** &mdash; [Regular Language Practice Problems](practice/reglang.html) have been posted on the [Practice Exams](practice/index.html) page.  Solutions will be posted soon.
