@@ -40,7 +40,8 @@ A set is an unordered collection of elements, with no duplicates allowed.  `cont
 There is a literal syntax for sets:
 
 {% highlight clojure %}
-#{ :a, :b, :c }     ; this is a set with three elements
+; this is a set with three elements
+#{ :a, :b, :c }
 {% endhighlight %}
 
 Note that the commas are optional in the literal syntax.

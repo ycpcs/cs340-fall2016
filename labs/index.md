@@ -18,6 +18,7 @@ Labs are not graded, and you do not need to submit them.  However, they are very
 > Tues, Sep 20th | [Lab 7: Turing Machines](lab07.html) | n/a
 > Tues, Sep 27th | [Lab 8: Exam Review](lab08.html) | [Practice Exam 1](../practice/cs340-fall2015-exam01.pdf)
 > Tues, Oct 4th | [Lab 9: Clojure Exercises](lab09.html) | n/a
+> Thurs, Oct 6th | [Lab 10: Can I take your order?](lab10.html) | n/a
 
 <!--
 > Tues, Sep 29th | [Lab 7: Clojure Exercises I](lab07.html) | n/a
@@ -33,3 +34,7 @@ Labs are not graded, and you do not need to submit them.  However, they are very
 > Tues, Dec 8th | [Lab 17: Functional programming exercises in Scala](lab17.html) | [lab17.scala](lab17.scala)
 > Thurs, Dec 10th | [Lab 18: Mandelbrot set in Scala](lab18.html) | [mandelbrot.scala](mandelbrot.scala)
 -->
+
+<!-- vim:set wrap: ­-->
+<!-- vim:set linebreak: -->
+<!-- vim:set nolist: -->
