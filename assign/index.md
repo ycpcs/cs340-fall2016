@@ -12,6 +12,7 @@ All assignments are due by 11:59 PM on the due date.
 > [Assignment 1: Regular expressions](assign01.html) | n/a | Fri, Sep 9th
 > [Assignment 2: Finite automata](assign02.html) | n/a | Friday, Sep 16th
 > [Assignment 3: JSON Parser](assign03.html) | [CS340\_Assign03.zip](CS340_Assign03.zip) | Fri, Sep 23rd
+> [Assignment 4: Clojure MOOC](assign04.html) | n/a | Milestone 1: Wednesday, Oct 12th<br>Milestone 2: Wednesday, Oct 19th<br>Milestone 3: Friday, Oct 21st
 
 <!--
 > [Assignment 4: Clojure MOOC](assign04.html) | n/a | Milestone 1: Monday, Oct 5th<br>Milestone 2: Monday, Oct 12th<br>Milestone 3: Thursday, Oct 22nd
