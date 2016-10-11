@@ -65,7 +65,7 @@ For example, the `geom-dist` function defined earlier accesses elements of two p
 
 This is even simpler than the previous version, and arguably more readable as well.
 
-The `let` form supports also destructuring:
+The `let` form also supports destructuring:
 
 {% highlight clojure %}
 (defn geom-dist [p1 p2]
