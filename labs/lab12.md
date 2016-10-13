@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Lab 11: Tic Tac Toe"
+title: "Lab 12: Tic Tac Toe"
 ---
 
 # Getting started
