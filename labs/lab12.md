@@ -21,6 +21,8 @@ Open `src/cs340_lab12/core.clj` in an editor (e.g., Kate) or import it into Ecli
 
 You should see a project called **cs340-lab12** in your workspace.  You can now open `src/cs340_lab12/core.clj`.  (Note that these steps will only work if you have Counterclockwise installed.)
 
+If you do not see **Leiningen dependencies** in your **cs340-lab12** project, right-click on the project and choose **Configure** &rarr; **Convert to Leiningen project**.  If the project is not configured as a Leiningen project, you won't be able to start a REPL from within Eclipse.
+
 # Your task
 
 Your task is to implement each of the following functions:
