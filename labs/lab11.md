@@ -40,3 +40,9 @@ Run the `lein test` command to run the unit tests.  You can see the code for the
 You don't need to do the functions in order (other than that you will want to implement `tally-item` before `invoice-total`.)
 
 You may find that destructuring is helpful for `tally-item`, `swapsies`, and `mulv3`.
+
+# Solution
+
+When you are done, you can compare your solution to mine:
+
+> [cs340-lab11-solution.zip](cs340-lab11-solution.zip)

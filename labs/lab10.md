@@ -81,6 +81,12 @@ Come up with a way to use the `map` function (as shown above) to compute a singl
 
 When you get this working, show me what you did.
 
+# Solution
+
+When you are done, you can compare your solution to mine:
+
+> [lab10-solution.clj](lab10-solution.clj)
+
 <!-- vim:set wrap: ­-->
 <!-- vim:set linebreak: -->
 <!-- vim:set nolist: -->

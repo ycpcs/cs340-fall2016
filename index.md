@@ -20,6 +20,7 @@ This is the website for CS 340, Fall 2016 at York College.  All information abou
 
 ## News
 
+* **Oct 13** &mdash; Solutions are available for [Lab 10](labs/lab10.html), [Lab 11](labs/lab11.html), and [Lab 12](labs/lab12.html).  (Scroll to the bottom of the lab web page for a link.)
 * **Oct 6** &mdash; [Assignment 4](assign/assign04.html) has been posted: see the assignment description for details.
 * **Oct 3** &mdash; The [Schedule](schedule.html) has been updated.
 * **Sep 28** &mdash; The solution to the first practice exam has been updated to correct two mistakes (a mislabeled transition in Question 5 and a missing production in Question 6.)

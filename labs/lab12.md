@@ -44,3 +44,9 @@ You may find the `mapv` function to be useful in implementing `get-col`.
 `make-check-fn` is a higher-order function (a function which returns a function).  Make sure you understand what the examples shown in the comment are doing.
 
 If you get all of the functions working, examine the `is-win?` function.  See if you can improve it.
+
+# Solution
+
+When you are done, you can compare your solution to mine:
+
+> [cs340-lab12-solution.zip](cs340-lab12-solution.zip)
