@@ -26,7 +26,7 @@ Oct 6 | *CBT*, Chapter 3, pages 35&ndash;48, [Lecture 11: Clojure Data Structure
 Oct 11 | *CBT*, Chapter 3, pages 48&ndash;69, [Lecture 12: Clojure functions](lectures/lecture12.html)
 Oct 13 | *CBT*, Chapter 4, pages 71&ndash;84, [Lecture 13: Map, filter, reduce, and higher-order functions](lectures/lecture13.html)
 Oct 18 | Fall break, no class
-Oct 20 | 
+Oct 20 | *CBT*, Chapter 5, [Lecture 14: Recursion and iteration](lectures/lecture14.html)
 Oct 25 | 
 Oct 27 | 
 Nov 1 | 
@@ -42,3 +42,7 @@ Dec 1 |
 Dec 6 | 
 Dec 8 | 
 Dec 13 | 
+
+<!-- vim:set wrap: ­-->
+<!-- vim:set linebreak: -->
+<!-- vim:set nolist: -->
