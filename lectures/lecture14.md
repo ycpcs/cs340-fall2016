@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Lecture 11: Recursion and iteration"
+title: "Lecture 14: Recursion and iteration"
 ---
 
 Like most functional programming languages, Clojure emphasizes the use of recursion for iterated computation.
