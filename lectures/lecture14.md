@@ -5,6 +5,30 @@ title: "Lecture 14: Recursion and iteration"
 
 Like most functional programming languages, Clojure emphasizes the use of recursion for iterated computation.
 
+# Basic recursion on sequences
+
+Here are some examples of recursion on sequences in Clojure:
+
+> [Recursion on sequences](recursion-examples.html)
+
+These illustrate how to build a sequence recursively, including how to build a sequence using tail recursion.
+
+# The `cond` form
+
+The `cond` form can be useful for handling a series of cases.  The syntax is
+
+> (**cond** *cond1* *expr1* *cond2* *expr2* ... `:else` *else-expr*) 
+
+The idea is that the conditions (*cond1*, *cond2*, etc.) are checked in order.  When an expression evaluates as "truthy" (any value other than `false` or `nil`), its corresponding expression is evaluated and its result is the overall result of the `cond` form.  This is somewhat similar to a `switch` statement in C or Java, but it is an expression which produces a value.
+
+Note that `:else` is used by convention for the last expression (to serve as a "catch all" if none of the other expressions are true), but any truthy value would also work.
+
+If there is no catch all expression, and if none of the expressions is true, the result is `nil`.
+
+# Recursion in Clojure
+
+[This section is a more in-depth illustration of recursion in Clojure.]
+
 Example, merging two sorted lists:
 
 {% highlight clojure %}
