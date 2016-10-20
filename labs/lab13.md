@@ -17,7 +17,7 @@ Your Task
 
 There are 4 tasks.
 
-<div class="callout"><b>Important</b>: Implement each function using recursion.  Where specified, use the <code>recur</code> or <code>loop</code>/<code>recur</code> forms.</div>
+Use recursion for each task.  Make sure your solution to the fourth task uses tail recursion.
 
 ### First task
 
@@ -47,7 +47,7 @@ It should return a new list containing all of the values in the original list, w
 
 Hints:
 
-The cons function, given a value and a list as arguments, returns a new list containing the value as the first element of the list, followed by all elements of the original list
+The `conj` function, given a list and a value as arguments, returns a new list containing the value as the first value and the elements of the original list as the remaining values.  (In other words, it prepends a value onto the original list.)
 
 Example:
 
@@ -79,7 +79,7 @@ You can use the following **make-int-list** function to generate a list with a s
 (defn make-int-list-work [min n accum]
   (if (> min n)
       accum
-      (recur min (- n 1) (cons n accum))))
+      (recur min (- n 1) (conj accum n))))
 
 ; Make a list containing all integers from 1 to n.
 (defn make-int-list [n]
@@ -89,13 +89,13 @@ You can use the following **make-int-list** function to generate a list with a s
 Here is a more compact version of **make-int-list** that uses the **loop** construct:
 
 {% highlight clojure %}
-(defn make-int-list [minval nval]
-  (loop [min minval
+(defn make-int-list [nval]
+  (loop [min 1
          n nval
          accum '()]
     (if (> min n)
       accum
-      (recur min (- n 1) (cons n accum)))))
+      (recur min (- n 1) (conj accum n)))))
 {% endhighlight %}
 
 For example, the call
@@ -114,8 +114,6 @@ fails.
 
 Once you have determined a list size *N* that will make the **reverse-list** function fail:
 
-Write a "tail-recursive" function called **reverse-tail-rec** to reverse the elements of a list. Show that it succeeds in reversing the list that caused your non-tail-recursive list reversal function to fail.
-
-**Note**: Clojure doesn't support true tail recursion (because the underlying Java Virtual Machine doesn't support it). So, you will need to use the **recur** special form. (See the **make-int-list-work** function above for an example.)
+Write a "tail-recursive" function called **reverse-tail-rec** to reverse the elements of a list.  To be tail-recursive, it should use `recur` instead of a direct recursive call.  You may use a helper function, or the `loop`/`recur` form.  Show that it succeeds in reversing the list that caused your non-tail-recursive list reversal function to fail.
 
 Interestingly, reversing a list is *easier* to do using tail recursion.
