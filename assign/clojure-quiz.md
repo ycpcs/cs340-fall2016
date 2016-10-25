@@ -17,7 +17,7 @@ You can test your functions by running the command `lein test` in a terminal win
 
 You can also start a Clojure REPL (in Eclipse) by right-clicking in `core.clj` and choosing **Clojure&rarr;Load file in REPL**.  This is very useful for testing your functions interactively.
 
-<div class="callout"><b>Important</b>: make sure you follow the requirements for each function.
+<div class="callout"><b>Important</b>: make sure you follow the requirements for each function.</div>
 
 ## Resources you may use
 
