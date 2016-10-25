@@ -22,6 +22,7 @@ Labs are not graded, and you do not need to submit them.  However, they are very
 > Tues, Oct 11th | [Lab 11: Clojure functions](lab11.html) | [cs340-lab11.zip](cs340-lab11.zip)
 > Thurs, Oct 13th | [Lab 12: Tic Tac Toe](lab12.html) | [cs340-lab12.zip](cs340-lab12.zip)
 > Thurs, Oct 20th | [Lab 13: Recursion in Clojure](lab13.html) | n/a
+> Tues, Oct 25th | [Lab 14: More Clojure practice](lab14.html) | [cs340-lab14.zip](cs340-lab14.zip)
 
 <!--
 > Tues, Sep 29th | [Lab 7: Clojure Exercises I](lab07.html) | n/a

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Lab 14: Clojure review"
+title: "Lab 14: More Clojure practice"
 ---
 
 # Getting started
@@ -9,7 +9,7 @@ Download [clojure-review.zip](clojure-review.zip).  It is an Eclipse project, so
 
 # Your task
 
-This is a Clojure review lab.  It is intended to prepare you for Exam 2, so I would recommend taking it in "exam conditions".  We will work on this lab in class on Tuesday, Nov 10th.
+This is a Clojure review lab.  It is intended to prepare you for Exam 2.
 
 Complete the **make-pair**, **double-apply**, **double-applicator**, **my-flatten**, and **conj-all** functions in `src/clojure_review/core.clj`.  Each function is described by a detailed comment with example inputs and expected results.
 
