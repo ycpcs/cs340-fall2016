@@ -28,11 +28,11 @@ Oct 13 | *CBT*, Chapter 4, pages 71&ndash;84, [Lecture 13: Map, filter, reduce, 
 Oct 18 | Fall break, no class
 Oct 20 | *CBT*, Chapter 5, [Lecture 14: Recursion and iteration](lectures/lecture14.html)
 Oct 25 | Recursion review
-Oct 27 | *CBT*, Chapter 7, Macros
-Nov 1 | *CBT*, Chapter 8, Macros
-Nov 3 | 
-Nov 8 | Clojure review 1
-Nov 10 | 
+Oct 27 | [Lecture 15: Prolog](lectures/lecture15.html)
+Nov 1 | [Lecture 16: More Prolog](lectures/lecture16.html)
+Nov 3 | *CBT*, Chapter 7, Macros
+Nov 8 | *CBT*, Chapter 8, Macros 
+Nov 10 |  Clojure review 1
 Nov 15 | Clojure review 2
 Nov 17 | 
 Nov 22 | **Exam 2**
