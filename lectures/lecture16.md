@@ -221,7 +221,7 @@ merge([MinList2|RestMerged], [MinList1|RestList1], [MinList2|RestList2]) :-
   merge(RestMerged,[MinList1|RestList1],RestList2).
 {% endhighlight %}
 
-The first rule says that the if *MinList1*, the first element of the list [*MinList1* | *RestList1*] is smaller than *MinList2* (the first element of the list [*MinList2* | *RestList2* ]), then the result of merging the two lists is *MinList1*, followed by the result of merging the lists *RestList1* and [*FirstList2* | *RestList2*]. The second rule handles the symmetric case (where *MinList2* is less than *MinList1*).
+The first rule says that the if *MinList1*, the first element of the list [*MinList1* \| *RestList1*] is smaller than *MinList2* (the first element of the list [*MinList2* \| *RestList2* ]), then the result of merging the two lists is *MinList1*, followed by the result of merging the lists *RestList1* and [*FirstList2* \| *RestList2*]. The second rule handles the symmetric case (where *MinList2* is less than *MinList1*).
 
 Testing the merge rule:
 
