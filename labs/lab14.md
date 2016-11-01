@@ -32,3 +32,5 @@ X is 4 + 5.
 succeeds with the binding of 9 to *X*.
 
 You can use the [*First*\|*Rest*] syntax to break up a non-empty list into a first element and remaining elements list.
+
+Note: Prolog is sensitive to the order in which the conjuncts in the hypothesis appear.  If your rule doesn't work, try reordering the clauses in the hypothesis of the recursive rule.
