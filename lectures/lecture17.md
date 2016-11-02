@@ -34,7 +34,97 @@ The built-in `read-string` function applies the reader to a string and returns t
     user=> (read-string "[1 2 3]")
     [1 2 3]
 
-To be continued...
+# The evaluator
+
+The evaluator takes a Clojure data structure representing a form, and evaluates it.  You can invoke the evaluator directly using the **eval** function.  E.g.:
+
+    user=> (eval (read-string "(+ 1 2)"))
+    3
+    user=> (eval '(+ 1 2))
+    3
+    user=> (eval (list '+ 1 2))
+    3
+
+In each case, we are evaluating a list with three elements &mdash; the symbol **+**, the number 1, and the number 2 &mdash; and evaluating it.  Since this data structure is the representation of a function application, evaluating it
+
+1. Looks up the function associated with the name "+" (the built-in addition function)
+2. Applies the function to the evaluated form of the arguments
+3. Returns the result of the function
+
+## What does the evaluator do?
+
+How the evaluator evaluates a form data structure depends on what kind it is.
+
+Some forms self-evaluate.  For example:
+
+* Numbers
+* Strings
+* Keyword values
+* The empty list
+
+A vector is evaluated by constructing a vector whose members are the results of evaluating the members of the original vector.  E.g.:
+
+    user=> (eval ['(+ 1 2) '(* 3 5)])
+    [3 15]
+
+A non-empty list evaluates either as a special form or a function evaluation, depending on what the first member of the list is.  E.g.:
+
+    user=> (eval '(if (> 3 4) "boo" "yah"))
+    "yah"
+    user=> (eval '(conj [:a :b] :c))
+    [:a :b :c]
+
+Symbols are one of the most interesting forms to evaluate: they represent a variable lookup.  E.g.:
+
+    user=> (def lunch "beans and rice")
+    #'user/lunch
+    user=> (eval 'lunch)
+    "beans and rice"
+
+# Macros
+
+So, the way Clojure works is that the reader turns code into data, and the evaluator carries out the computation embodied by the data.
+
+What if we could intervene in the process by changing the data produced by the reader before it goes on to the evaluator?  Then we could change the language itself.
+
+*Macros* offer precisely this capability.  A macro is a function which transforms a "raw" form as produced by the reader.
+
+## Example
+
+Let's say we're having trouble dealing with the fact that Clojure uses prefix syntax for function applications, including applications of arithmetic operators.  We can write a macro to allow us to use infix notation!
+
+    user=> (defmacro infix [left op right]
+      #_=>   (list op left right))
+    #'user/infix
+    user=> (infix 2 + 3)
+    5
+
+One minor issue is that this macro does not recursive translate subexpressions from infix form to prefix form.  Better version:
+
+    user=> (defn from-infix [expr]
+      #_=>   (if (sequential? expr)
+      #_=>     (let [[left op right] expr]
+      #_=>       (list op (from-infix left) (from-infix right)))
+      #_=>     expr))
+    #'user/from-infix
+    user=> (defmacro infix [first-param & other-params]
+      #_=>   (if (empty? other-params)
+      #_=>     (from-infix first-param)
+      #_=>     (from-infix (conj other-params first-param))))
+    #'user/infix
+    user=> (infix 2)
+    2
+    user=> (infix 2 + 3)
+    5
+    user=> (infix 2 * (3 + 5))
+    16
+
+Some explanation:
+
+* the `sequential?` function returns true if its argument is a sequence (such as list)
+* defining the macro parameter list as `[first-param & other-params]` allows the macro to take either one argument or more than one, with `other-params` containing the arguments past the first argument
+
+We just changed the language!  This example is somewhat frivolous, but macros can be tremendously powerful when applied thoughtfully.  With macros, you never need to wish that your programming language had a construct that would make your life easier.  You can just *add* the constructs you need.
 
 <!-- vim:set wrap: ­-->
 <!-- vim:set linebreak: -->
