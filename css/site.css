@@ -148,10 +148,19 @@ tr:nth-child(even) {
 	background: #ddd;
 }
 
+/* pre blocks already have a margin: avoid adding extra left/right margins
+   to highlighted blocks */
+figure {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
 pre, code, tt {
 	font-family: 'Source Code Pro', monospace;
 }
 
+/* these rules are applied to both "plain" pre blocks and those
+   produced for highlighted blocks */
 pre {
 	margin-left: 20px;
 	margin-right: 20px;
@@ -184,57 +193,4 @@ dt {
 
 .sourceref {
 	font-size: 80%;
-}
-
-.topic-sc, .topic-art, .topic-mus, .topic-hum, .topic-sci, .topic-phy {
-	width: 2em;
-	display: inline-block;
-}
-
-.topic-sc {
-	background: yellow;
-}
-
-.topic-sc::before {
-	content: "\0000a0";
-}
-
-.topic-art {
-	background: #4169E1;
-}
-
-.topic-art::before {
-	content: "\0000a0";
-}
-
-.topic-mus {
-	background: #deb887;
-}
-
-.topic-mus::before {
-	content: "\0000a0";
-}
-
-.topic-hum {
-	background: #008080;
-}
-
-.topic-hum::before {
-	content: "\0000a0";
-}
-
-.topic-sci {
-	background: #cc0033;
-}
-
-.topic-sci::before {
-	content: "\0000a0";
-}
-
-.topic-phy {
-	background: #9900cc;
-}
-
-.topic-phy::before {
-	content: "\0000a0";
 }
