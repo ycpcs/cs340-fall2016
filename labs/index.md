@@ -23,6 +23,7 @@ Labs are not graded, and you do not need to submit them.  However, they are very
 > Thurs, Oct 13th | [Lab 12: Tic Tac Toe](lab12.html) | [cs340-lab12.zip](cs340-lab12.zip)
 > Thurs, Oct 20th | [Lab 13: Recursion in Clojure](lab13.html) | n/a
 > Tues, Nov 1st | [Lab 14: Recursive List Processing in Prolog](lab14.html) | n/a
+> Thurs, Nov 3rd | [Lab 15: Clojure macros](lab15.html) | n/a
 
 <!--
 > Tues, Oct 25th | [Lab 14: More Clojure practice](lab14.html) | [cs340-lab14.zip](cs340-lab14.zip)
