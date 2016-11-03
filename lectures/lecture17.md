@@ -109,6 +109,8 @@ Note that the single quote ("`'`") is a *reader macro* that converts the next ex
 
 > (**quote** *expr*)
 
+This special form tells the evaluator, "Hey evaluator, I know you would really like to evaluate *expr*, but don't do it, OK?  Just return it as a literal value."
+
 You can use this more verbose way of quoting directly if you want to:
 
     user=> (quote (+ 1 2))
