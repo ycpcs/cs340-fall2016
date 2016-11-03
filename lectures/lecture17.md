@@ -81,6 +81,41 @@ Symbols are one of the most interesting forms to evaluate: they represent a vari
     user=> (eval 'lunch)
     "beans and rice"
 
+## Preventing evaluation
+
+Sometimes it's important to *prevent* a form from being evaluated.  With self-evaluating forms such as numbers and keyword values, there's no need to prevent evaluation since the result of evaluation is the same as the original form.  However, it is useful to prevent the evaluation of lists and symbols.  A list is usually evaluated as a special form or a function application, so if you want a literal list, you need to prevent evaluation.  Similarly, a symbol is usually evaluated as a variable lookup, so if you want a literal symbol, again, you need to prevent evaluation.
+
+The good news is that Clojure makes it really simple to prevent evaluation through *quoting*:
+
+    user=> (+ 2 3)
+    5
+    user=> '(+ 2 3)
+    (+ 2 3)
+    user=> +
+    #object[clojure.core$_PLUS_ 0x2bc19629 "clojure.core$_PLUS_@2bc19629"]
+    user=> '+
+    +
+
+What we're seeing here is:
+
+1. The text `(+ 2 3)`, which the reader transforms into a list, is evaluated as a function application
+2. In the text `'(+ 2 3)`, the reader interprets the quote (`'`) character as meaning "prevent the evaluation of the next form", which produces a literal list as a result
+3. The text `+`, which the reader transforms into a symbol, is evaluated as a variable lookup, and by default the name "`+`" refers to the built-in "plus" function
+4. In the text `'+`, the quote prevents evaluation, yielding the literal symbol "`+`"
+
+So, now you know how quoting works and why it's necessary.
+
+Note that the single quote ("`'`") is a *reader macro* that converts the next expression *expr* into the special form
+
+> (**quote** *expr*)
+
+You can use this more verbose way of quoting directly if you want to:
+
+    user=> (quote (+ 1 2))
+    (+ 1 2)
+    user=> (quote +)
+    +
+
 # Macros
 
 So, the way Clojure works is that the reader turns code into data, and the evaluator carries out the computation embodied by the data.
