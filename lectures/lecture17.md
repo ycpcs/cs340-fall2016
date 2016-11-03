@@ -136,7 +136,7 @@ Let's say we're having trouble dealing with the fact that Clojure uses prefix sy
     user=> (infix 2 + 3)
     5
 
-One minor issue is that this macro does not recursive translate subexpressions from infix form to prefix form.  Better version:
+One issue is that this macro does not recursively translate subexpressions from infix form to prefix form.  Better version:
 
     user=> (defn from-infix [expr]
       #_=>   (if (sequential? expr)
