@@ -9,8 +9,6 @@ Download [cs340-clojurequiz.zip](cs340-clojurequiz.zip).  It is an Eclipse proje
 
 # Your task
 
-This is a Clojure review lab.  It is intended to prepare you for Exam 2, so I would recommend taking it in "exam conditions".  We will work on this lab in class on Tuesday, Nov 10th.
-
 Complete the **swap-maybe**, **negate-all**, **rotate1**, and **rotaten** functions in `src/cs340_clojurequiz/core.clj`.  Each function is described by a detailed comment with example inputs and expected results.
 
 You can test your functions by running the command `lein test` in a terminal window from the root of the project.
