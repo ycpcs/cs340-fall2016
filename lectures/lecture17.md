@@ -130,36 +130,47 @@ What if we could intervene in the process by changing the data produced by the r
 
 Let's say we're having trouble dealing with the fact that Clojure uses prefix syntax for function applications, including applications of arithmetic operators.  We can write a macro to allow us to use infix notation!
 
-    user=> (defmacro infix [left op right]
-      #_=>   (list op left right))
-    #'user/infix
+{% highlight clojure %}
+(defmacro infix [left op right]
+  (list op left right))
+{% endhighlight %}
+
+Example use:
+
     user=> (infix 2 + 3)
     5
 
 One issue is that this macro does not recursively translate subexpressions from infix form to prefix form.  Better version:
 
-    user=> (defn from-infix [expr]
-      #_=>   (if (sequential? expr)
-      #_=>     (let [[left op right] expr]
-      #_=>       (list op (from-infix left) (from-infix right)))
-      #_=>     expr))
-    #'user/from-infix
-    user=> (defmacro infix [first-param & other-params]
-      #_=>   (if (empty? other-params)
-      #_=>     (from-infix first-param)
-      #_=>     (from-infix (conj other-params first-param))))
-    #'user/infix
+{% highlight clojure %}
+defn from-infix [e]
+  (if (not (sequential? e))
+    e
+    (let [n (count e)]
+      (case n
+        1 (from-infix (first e))
+        3 (let [[left op right] e]
+            (list op (from-infix left) (from-infix right)))
+        (throw (RuntimeException. "infix expression must have 1 or 3 members"))))))
+
+(defmacro infix [& expr]
+  (from-infix expr))
+{% endhighlight %}
+
+Example use:
+
     user=> (infix 2)
     2
     user=> (infix 2 + 3)
     5
-    user=> (infix 2 * (3 + 5))
+    user=> (infix 2 * ((3) + 5))
     16
 
 Some explanation:
 
 * the `sequential?` function returns true if its argument is a sequence (such as list)
-* defining the macro parameter list as `[first-param & other-params]` allows the macro to take either one argument or more than one, with `other-params` containing the arguments past the first argument
+* the `case` form tests a value against a series of possibilities, returning a result expression on match: the `from-infix` function uses it to check whether the sequence containing an infix expression has 1 or 3 members
+* in the `infix` macro, the syntax `[& expr]` allows the macro to take any number of arguments, causing `expr` to be a sequence containing the arguments
 
 We just changed the language!  This example is somewhat frivolous, but macros can be tremendously powerful when applied thoughtfully.  With macros, you never need to wish that your programming language had a construct that would make your life easier.  You can just *add* the constructs you need.
 
