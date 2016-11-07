@@ -143,7 +143,7 @@ Example use:
 One issue is that this macro does not recursively translate subexpressions from infix form to prefix form.  Better version:
 
 {% highlight clojure %}
-defn from-infix [e]
+(defn from-infix [e]
   (if (not (sequential? e))
     e
     (let [n (count e)]
