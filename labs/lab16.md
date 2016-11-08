@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Lab 14: More Clojure practice"
+title: "Lab 16: Clojure Review 1"
 ---
 
 # Getting started
@@ -25,4 +25,4 @@ You may use your textbook, the [course website](http://ycpcs.github.io/cs340-fal
 
 # Solutions
 
-Here are my solutions: [lab14.clj](https://github.com/ycpcs/cs340-fall2016/blob/gh-pages/labs/lab14.clj)
+Here are my solutions: [lab16.clj](https://github.com/ycpcs/cs340-fall2016/blob/gh-pages/labs/lab16.clj)
