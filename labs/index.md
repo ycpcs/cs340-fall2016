@@ -24,7 +24,7 @@ Labs are not graded, and you do not need to submit them.  However, they are very
 > Thurs, Oct 20th | [Lab 13: Recursion in Clojure](lab13.html) | n/a
 > Tues, Nov 1st | [Lab 14: Recursive List Processing in Prolog](lab14.html) | n/a
 > Thurs, Nov 3rd | [Lab 15: Clojure macros](lab15.html) | n/a
-> Tues, Nov 8th | [Lab 16: Clojure Revie 1](lab16.html) | [cs340-lab16.zip](cs340-lab16.zip)
+> Tues, Nov 8th | [Lab 16: Clojure Review 1](lab16.html) | [cs340-lab16.zip](cs340-lab16.zip)
 
 <!--
 -->

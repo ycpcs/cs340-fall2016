@@ -5,7 +5,7 @@ title: "Lab 16: Clojure Review 1"
 
 # Getting started
 
-Download [clojure-review.zip](clojure-review.zip).  It is an Eclipse project, so you can import it into Eclipse using **File&rarr;Import...&rarr;General&rarr;Existing projects into workspace&rarr;Archive file**.  You should see a project called **clojure-review** in your Eclipse workspace.
+Download [cs340-lab16.zip](cs340-lab16.zip).  It is an Eclipse project, so you can import it into Eclipse using **File&rarr;Import...&rarr;General&rarr;Existing projects into workspace&rarr;Archive file**.  You should see a project called **clojure-review** in your Eclipse workspace.
 
 # Your task
 
@@ -25,4 +25,4 @@ You may use your textbook, the [course website](http://ycpcs.github.io/cs340-fal
 
 # Solutions
 
-Here are my solutions: [lab16.clj](https://github.com/ycpcs/cs340-fall2016/blob/gh-pages/labs/lab16.clj)
+Here are my solutions: [lab16.clj](https://github.com/ycpcs/cs340-fall2016/blob/gh-pages/labs/lab16.clj).  **Do not look at these until you have completed all of the functions on your own.**
