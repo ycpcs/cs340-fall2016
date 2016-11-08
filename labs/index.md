@@ -26,6 +26,7 @@ Labs are not graded, and you do not need to submit them.  However, they are very
 > Thurs, Nov 3rd | [Lab 15: Clojure macros](lab15.html) | n/a
 > Tues, Nov 8th | [Lab 16: Clojure Review 1](lab16.html) | [cs340-lab16.zip](cs340-lab16.zip)
 > Thurs, Nov 10th | [Lab 17: Clojure Review 2](lab17.html) | [cs340-lab17.zip](cs340-lab17.zip)
+> Tues, Nov 15th | [Lab 18: Clojure Review 3](lab18.html) | [cs340-lab18.zip](cs340-lab18.zip)
 
 <!--
 -->
