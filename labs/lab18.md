@@ -5,13 +5,13 @@ title: "Lab 18: Clojure review 3"
 
 # Getting started
 
-Download [cs340-lab18.zip](cs340-lab18.zip).  It is an Eclipse project, so you can import it into Eclipse using **File&rarr;Import...&rarr;General&rarr;Existing projects into workspace&rarr;Archive file**.  You should see a project called **clojure-review2** in your Eclipse workspace.
+Download [cs340-lab18.zip](cs340-lab18.zip).  It is an Eclipse project, so you can import it into Eclipse using **File&rarr;Import...&rarr;General&rarr;Existing projects into workspace&rarr;Archive file**.  You should see a project called **cs340-lab18** in your Eclipse workspace.
 
 # Your task
 
 This is a Clojure review lab.  It is intended to prepare you for Exam 2.
 
-Complete the **rotate-triple**, **make-repeated-applicator**, **make-triple-rotator**, **make-pairs**, **count-nested**, and **my-eq** functions in `src/clojure_review2/core.clj`.  Each function is described by a detailed comment with example inputs and expected results.
+Complete the **rotate-triple**, **make-repeated-applicator**, **make-triple-rotator**, **make-pairs**, **count-nested**, and **my-eq** functions in `src/clojure_review3/core.clj`.  Each function is described by a detailed comment with example inputs and expected results.
 
 You can test your functions by running the command `lein test` in a terminal window from the root of the project.
 

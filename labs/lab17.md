@@ -5,7 +5,7 @@ title: "Lab 17: Clojure review 2"
 
 # Getting started
 
-Download [cs340-lab17.zip](cs340-lab17.zip).  It is an Eclipse project, so you can import it into Eclipse using **File&rarr;Import...&rarr;General&rarr;Existing projects into workspace&rarr;Archive file**.  You should see a project called **clojure-review2** in your Eclipse workspace.
+Download [cs340-lab17.zip](cs340-lab17.zip).  It is an Eclipse project, so you can import it into Eclipse using **File&rarr;Import...&rarr;General&rarr;Existing projects into workspace&rarr;Archive file**.  You should see a project called **cs340-lab17** in your Eclipse workspace.
 
 # Your task
 
