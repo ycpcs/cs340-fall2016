@@ -45,6 +45,6 @@ Alternate version of unless:
   `(if ~cond ~if-true ~if-false))
 {% endhighlight %}
 
-The idea is that the syntax quote ("`\``") automatically quotes all symbols in its scope, and the "unquote" ("`~`") evaluates code to be substituted into the result.
+The idea is that the syntax quote ("<tt>\`</tt>") automatically quotes all symbols in its scope, and the "unquote" ("`~`") evaluates code to be substituted into the result.
 
 If you have ever developed a web application using a template engine (such as Java Server Pages) to dynamically generate HTML, this is much the same idea, except to generate Clojure forms.
