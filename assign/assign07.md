@@ -31,13 +31,13 @@ You will need to think carefully about the structure of the parse nodes you will
 
 There are several helper functions that you may find useful.
 
-The **node/make-node** function provides a convenient way to create a new AST node.  It takes a symbol and a vector of child nodes as parameters.
+The **node/make-node** function provides a convenient way to create a new AST node.  It takes a symbol and a sequence of child nodes as parameters.
 
 The **node/children** function takes a parse node as a parameter and returns a vector containing the children of the parse node.  (It will throw an exception if passed a terminal node.)
 
-The **node/get-child** function takes a parse node and an integer *n*, and returns the *n*th child of the parse node.
+The **node/get-child** function takes a parse node and an integer *n*, and returns the *n*th child of the parse node (with 0 being the index of the first child).
 
-The **recur-on-children** takes a parse node as a parameter, and returns an AST node whose symbol is the same as the parse node, and whose children are ASTs constructed from the children of the parse node.  (Hint: this should be useful for nodes representing binary operators.)
+The **recur-on-children** function takes a parse node as a parameter, and returns an AST node whose symbol is the same as the parse node, and whose children are ASTs constructed from the children of the parse node.  (Hint: this should be useful for nodes representing binary operators.)
 
 **:primary** nodes representing parenthesized expressions will require special handling: specifically, the *second* child should be recursively turned into an AST, rather than the first child (which is the correct approach for the other kinds of primary expressions.)
 
@@ -89,14 +89,14 @@ Expected AST:
 
 Example input:
 
-    while (a + b) { c; d*e*4; }
+    while (a <= b) { c; d*e*4; }
 
 Expected AST:
 
     :unit
     +--:statement_list
        +--:while_statement
-          +--:op_plus
+          +--:op_lte
           |  +--:identifier["a"]
           |  +--:identifier["b"]
           +--:statement_list
@@ -108,6 +108,26 @@ Expected AST:
                    |  +--:identifier["d"]
                    |  +--:identifier["e"]
                    +--:int_literal["4"]
+
+Example input:
+
+    if (x != 4) { y := z*3; }
+
+Expected AST:
+
+    :unit
+    +--:statement_list
+       +--:if_statement
+          +--:op_neq
+          |  +--:identifier["x"]
+          |  +--:int_literal["4"]
+          +--:statement_list
+             +--:expression_statement
+                +--:op_assign
+                   +--:identifier["y"]
+                   +--:op_mul
+                      +--:identifier["z"]
+                      +--:int_literal["3"]
 
 # Grading
 
