@@ -17,7 +17,7 @@ A *virtual machine* permits a hybrid approach.  A virtual machine is essentially
 * by translating it to machine code at run-time ("Just In Time" compilation)
 * by using both interpretation and JIT compilation (many JVMs, including the default Hotspot JVM, work this way)
 
-Java, Scala, Clojure, and C# are all typically implemented by compilation to virtual machine bytecode.
+Java, Scala, Clojure, and C# are all typically implemented by compilation to virtual machine bytecode.  JavaScript is also usually implemented on a virtual machine (using interpretation and JIT compilation), although typically without an explicit bytecode representation.
 
 Virtual machines using JIT compilation can achieve performance comparable to the performance of natively compiled code.
 
