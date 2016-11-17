@@ -34,7 +34,7 @@ Nov 3 | *CBT*, Chapter 7, [Lecture 17: Clojure reader and evaluator](lectures/le
 Nov 8 | *CBT*, Chapter 8, [Lecture 18: More Clojure macros](lectures/lecture18.html), Clojure review 1
 Nov 10 |  Clojure review 2
 Nov 15 | Clojure review 3
-Nov 17 | Lecture 19: Virtual Machines
+Nov 17 | [Lecture 19: Virtual Machines](lectures/lecture19.html)
 Nov 22 | **Exam 2**
 Nov 24 | Thanksgiving vacation, no class
 Nov 29 | 
