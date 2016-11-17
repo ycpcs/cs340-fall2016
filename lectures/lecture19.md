@@ -21,6 +21,8 @@ Java, Scala, Clojure, and C# are all typically implemented by compilation to vir
 
 Virtual machines using JIT compilation can achieve performance comparable to the performance of natively compiled code.
 
+Note that there is another meaning for the term "Virtual Machine", which is an environment which virtualizes an entire computer to permit executing of a guest operating system within a host operating system.  Examples of this type of "system-level" VM include VMWare, VirtualBox, KVM, Xen, QEMU, and many others.  There are important similarities between system-level and language VMs, and in many cases they share common implementation strategies.
+
 # Benefits of virtual machines
 
 Virtual Machines offer a number of benefits.
