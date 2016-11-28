@@ -37,9 +37,9 @@ Nov 15 | Clojure review 3
 Nov 17 | [Lecture 19: Virtual Machines](lectures/lecture19.html)
 Nov 22 | **Exam 2**
 Nov 24 | Thanksgiving vacation, no class
-Nov 29 | 
-Dec 1 | 
-Dec 6 | 
+Nov 29 | [Lecture 20: Erlang](lectures/lecture20.html)
+Dec 1 | [Lecture 21: More Erlang](lectures/lecture21.html)
+Dec 6 | [Lecture 22: Concurrency in Erlang](lectures/lecture22.html)
 Dec 8 | 
 Dec 13 | 
 
