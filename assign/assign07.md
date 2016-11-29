@@ -3,9 +3,9 @@ layout: default
 title: "Assignment 7: Parsing, Part 2"
 ---
 
-*Update: 11/29* &mdash; Updated to mention problem with the `recur-on-children` function.
+*Update: 11/29* &mdash; Updated to mention problem with the `recur-on-children` function, changed due date
 
-**Due**: Thursday, Dec 1st by 11:59 PM
+**Due**: Tuesday, Dec 6th by 11:59 PM
 
 # Getting Started
 
