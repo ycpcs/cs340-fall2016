@@ -20,6 +20,7 @@ This is the website for CS 340, Fall 2016 at York College.  All information abou
 
 ## News
 
+* **Nov 29** &mdash; The description of [Assignment 7](assign/assign07.html) has been updated with a fix for the `recur-on-children` function.
 * **Nov 28** &mdash; The [Schedule](schedule.html) has been updated.
 * **Nov 16** &mdash; [Assignment 7](assign/assign07.html) is due on Thursday, Dec 1st by 11:59 PM.
 * **Nov 15** &mdash; For Exam 2 (in class on Tuesday, Nov 22nd), you may bring in up to three single-sided pages of notes.
