@@ -152,7 +152,7 @@ Your assignment grade will be determined as follows:
 
 # Submitting
 
-When you are done, submit the lab to the Marmoset server using either of the methods below.
+When you are done, submit the assignment to the Marmoset server using either of the methods below.
 
 > **Important**: after you submit, log into the submission server and verify that the correct files were uploaded. You are responsible for ensuring that you upload the correct files. I may assign a grade of 0 for an incorrectly submitted assignment.
 
