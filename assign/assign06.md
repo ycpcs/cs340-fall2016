@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Assignment 6: Parsing, Part 1"
+title: "Assignment 6: Parsing"
 ---
 
 **Due**: Thursday, Nov 17th by 11:59 PM

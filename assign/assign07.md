@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Assignment 7: Parsing, Part 2"
+title: "Assignment 7: Abstract Syntax Trees"
 ---
 
 *Update: 11/29* &mdash; Updated to mention problem with the `recur-on-children` function, changed due date
