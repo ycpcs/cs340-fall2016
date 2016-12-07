@@ -40,8 +40,8 @@ Nov 24 | Thanksgiving vacation, no class
 Nov 29 | [Lecture 20: Erlang](lectures/lecture20.html)
 Dec 1 | [Lecture 21: More Erlang](lectures/lecture21.html)
 Dec 6 | [Lecture 22: Concurrency in Erlang](lectures/lecture22.html)
-Dec 8 | 
-Dec 13 | 
+Dec 8 | [Lecture 23: Concurrency in Clojure](lectures/lecture23.html)
+Dec 13 | [Lecture 24: Agents in Clojure](lectures/lecture24.html)
 
 <!-- vim:set wrap: ­-->
 <!-- vim:set linebreak: -->
