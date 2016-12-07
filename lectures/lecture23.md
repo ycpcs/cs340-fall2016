@@ -13,7 +13,7 @@ Clojure supports several mechanisms for concurrency. The important thing to real
 
 Eliminating the possibility of an important class of errors such as data races and deadlocks. This doesn't mean that it is necessarily *easy* to express correct concurrent algorithms in Clojure, but there is more safety than in languages such as Java.
 
-Because Clojure is a "mostly-functional" language, it is possible to write programs that use concurrency but do not use *any* mutable state. For example, many of the important built-in data structures (such as lists) are *immutable*: "modification" to such data structures produces a new data structure rather than destructively modifying the previous one. This can be very efficient, because most or all of the previous data structure can be re-used as-is rather than copying it.
+Because Clojure is a "mostly-functional" language, it is possible to write programs that use concurrency but do not use *any* mutable state. For example, many of the important built-in data structures (such as vectors, lists, and maps) are *immutable*: "modification" to such data structures produces a new data structure rather than destructively modifying the previous one. This can be very efficient, because most or all of the previous data structure can be re-used as-is rather than copying it.
 
 Futures
 -------
