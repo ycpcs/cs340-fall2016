@@ -1,3 +1,5 @@
+(ns statecolors)
+
 ; Adjacency list vector for US states.
 (def state-adjacency-list
   ; Source of data:
@@ -7,72 +9,72 @@
   ; that adjacency to the diagonal neighbors would make the graph
   ; non-planar, meaning that the feasibility of 4-coloring is not
   ; guaranteed.
-  ['(AK)
-   '(AL MS TN GA FL)
-   '(AR MO TN MS LA TX OK)
-   '(AZ CA NV UT NM) ; CO
-   '(CA OR NV AZ)
-   '(CO WY NE KS OK NM UT) ; AZ
-   '(CT NY MA RI)
-   '(DC MD VA)
-   '(DE MD PA NJ)
-   '(FL AL GA)
-   '(GA FL AL TN NC SC)
-   '(HI)
-   '(IA MN WI IL MO NE SD)
-   '(ID MT WY UT NV OR WA)
-   '(IL IN KY MO IA WI)
-   '(IN MI OH KY IL)
-   '(KS NE MO OK CO)
-   '(KY IN OH WV VA TN MO IL)
-   '(LA TX AR MS)
-   '(MA RI CT NY NH VT)
-   '(MD VA WV PA DC DE)
-   '(ME NH)
-   '(MI WI IN OH)
-   '(MN WI IA SD ND)
-   '(MO IA IL KY TN AR OK KS NE)
-   '(MS LA AR TN AL)
-   '(MT ND SD WY ID)
-   '(NC VA TN GA SC)
-   '(ND MN SD MT)
-   '(NE SD IA MO KS CO WY)
-   '(NH VT ME MA)
-   '(NJ DE PA NY)
-   '(NM AZ CO OK TX) ; UT
-   '(NV ID UT AZ CA OR)
-   '(NY NJ PA VT MA CT)
-   '(OH PA WV KY IN MI)
-   '(OK KS MO AR TX NM CO)
-   '(OR CA NV ID WA)
-   '(PA NY NJ DE MD WV OH)
-   '(RI CT MA)
-   '(SC GA NC)
-   '(SD ND MN IA NE WY MT)
-   '(TN KY VA NC GA AL MS AR MO)
-   '(TX NM OK AR LA)
-   '(UT ID WY CO AZ NV) ; NM
-   '(VA NC TN KY WV MD DC)
-   '(VT NY NH MA)
-   '(WA ID OR)
-   '(WI MI MN IA IL)
-   '(WV OH PA MD VA KY)
-   '(WY MT SD NE CO UT ID)])
+  [[:AK]
+   [:AL :MS :TN :GA :FL]
+   [:AR :MO :TN :MS :LA :TX :OK]
+   [:AZ :CA :NV :UT :NM] ; :CO
+   [:CA :OR :NV :AZ]
+   [:CO :WY :NE :KS :OK :NM :UT] ; :AZ
+   [:CT :NY :MA :RI]
+   [:DC :MD :VA]
+   [:DE :MD :PA :NJ]
+   [:FL :AL :GA]
+   [:GA :FL :AL :TN :NC :SC]
+   [:HI]
+   [:IA :MN :WI :IL :MO :NE :SD]
+   [:ID :MT :WY :UT :NV :OR :WA]
+   [:IL :IN :KY :MO :IA :WI]
+   [:IN :MI :OH :KY :IL]
+   [:KS :NE :MO :OK :CO]
+   [:KY :IN :OH :WV :VA :TN :MO :IL]
+   [:LA :TX :AR :MS]
+   [:MA :RI :CT :NY :NH :VT]
+   [:MD :VA :WV :PA :DC :DE]
+   [:ME :NH]
+   [:MI :WI :IN :OH]
+   [:MN :WI :IA :SD :ND]
+   [:MO :IA :IL :KY :TN :AR :OK :KS :NE]
+   [:MS :LA :AR :TN :AL]
+   [:MT :ND :SD :WY :ID]
+   [:NC :VA :TN :GA :SC]
+   [:ND :MN :SD :MT]
+   [:NE :SD :IA :MO :KS :CO :WY]
+   [:NH :VT :ME :MA]
+   [:NJ :DE :PA :NY]
+   [:NM :AZ :CO :OK :TX] ; :UT
+   [:NV :ID :UT :AZ :CA :OR]
+   [:NY :NJ :PA :VT :MA :CT]
+   [:OH :PA :WV :KY :IN :MI]
+   [:OK :KS :MO :AR :TX :NM :CO]
+   [:OR :CA :NV :ID :WA]
+   [:PA :NY :NJ :DE :MD :WV :OH]
+   [:RI :CT :MA]
+   [:SC :GA :NC]
+   [:SD :ND :MN :IA :NE :WY :MT]
+   [:TN :KY :VA :NC :GA :AL :MS :AR :MO]
+   [:TX :NM :OK :AR :LA]
+   [:UT :ID :WY :CO :AZ :NV] ; :NM
+   [:VA :NC :TN :KY :WV :MD :DC]
+   [:VT :NY :NH :MA]
+   [:WA :ID :OR]
+   [:WI :MI :MN :IA :IL]
+   [:WV :OH :PA :MD :VA :KY]
+   [:WY :MT :SD :NE :CO :UT :ID]])
 
 ; Build a map of state names to their indices in the adjancency list vector
 (def state-to-index-map
   (zipmap (map (fn [lst] (first lst)) state-adjacency-list) (range 0 (count state-adjacency-list))))
 
 ; Possible colors
-; FIXME: for some reason I can only get a successful result\
+; FIXME: for some reason I can only get a successful result
 ; with 5 colors.  Perhaps the graph is still not planar, even
 ; after fixing the Four Corners problem?
-(def colors '(red green blue yellow purple)) ; orange
+(def colors [:red :green :blue :yellow :purple]) ; orange
 
 ; Create a vector of Refs, one for each state.
 ; Each ref stores the current color for the corresponding state.
 (def state-colors
-  (vec (repeatedly (count state-adjacency-list) (fn [] (ref 'red)))))
+  (vec (repeatedly (count state-adjacency-list) (fn [] (ref :red)))))
 
 ; Get a list of adjacent states given the index of a state
 (defn get-neighbors [index]
@@ -93,9 +95,9 @@
   (letfn [(work [candidates good]
             (cond
               (empty? candidates) (if (empty? good) (list default) good)
-              (not (contains? s (first candidates))) (recur (rest candidates) (cons (first candidates) good))
+              (not (contains? s (first candidates))) (recur (rest candidates) (conj good (first candidates)))
               :else (recur (rest candidates) good)))]
-    (rand-nth (work colors '()))))
+    (rand-nth (work colors []))))
 
 ; Worker function to try computing a color for a state
 ; by examining the colors of adjacent states and (if possible)
