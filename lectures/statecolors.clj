@@ -107,7 +107,7 @@
     ; Reached the end of the computation:
     ; return the final color, along with boolean indicating whether
     ; the final color is legal (as far as we can tell)
-    (list (deref (nth state-colors index)) ok)
+    (vector (deref (nth state-colors index)) ok)
     ; In a transaction, attempt to find a color for the state.
     (do
       ; The found-legal-color variable will be set to the
