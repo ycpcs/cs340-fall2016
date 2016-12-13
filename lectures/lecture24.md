@@ -11,7 +11,7 @@ Agent-based Mandelbrot computation in Clojure:
 
 `mandelbrot.clj` has functions implementing the core Mandelbrot set computation (iterating <i>Z</i> = <i>Z</i><sup>2</sup> + <i>C</i>).
 
-`rowactor.clj` is the code for creating and running row actors.  Row actors respond to `compute-row` messages, and respond by computing iteration counts for the requested row.  The state data for a row actor is simply a reference to the mandelbrot agent (where results will be sent) and the message function to be used to send back row results to the mandelbrot agent.
+`rowagent.clj` is the code for creating and running row actors.  Row actors respond to `compute-row` messages, and respond by computing iteration counts for the requested row.  The state data for a row actor is simply a reference to the mandelbrot agent (where results will be sent) and the message function to be used to send back row results to the mandelbrot agent.
 
 `mandelbrotagent.clj` is the code for creating an running the main mandelbrot actor.  It responds to `start` and `row-result` messages.  The `start` message indicates the start of the computation, and causes the mandelbrot actor to create row actors and assign work to them.  The `row-result` message indicates that a row of iteration counts has been completed by a row actor.  The state data for a mandelbrot actor is a map of unique ids (representing computations) to a vector containing the received row results for the computation.
 
