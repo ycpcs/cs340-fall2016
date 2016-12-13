@@ -13,7 +13,7 @@ Agent-based Mandelbrot computation in Clojure:
 
 `rowagent.clj` is the code for creating and running row agents.  Row agents respond to `compute-row` messages, and respond by computing iteration counts for the requested row.  The state data for a row agent is simply a reference to the mandelbrot agent (where results will be sent) and the message function to be used to send back row results to the mandelbrot agent.
 
-`mandelbrotagent.clj` is the code for creating an running the main mandelbrot agent.  It responds to `start` and `row-result` messages.  The `start` message indicates the start of the computation, and causes the mandelbrot agent to create row agent and assign work to them.  The `row-result` message indicates that a row of iteration counts has been completed by a row agent.  The state data for a mandelbrot agent is a map of unique ids (representing computations) to a vector containing the received row results for the computation.
+`mandelbrotagent.clj` is the code for creating an running the main mandelbrot agent.  It responds to `start` and `row-result` messages.  The `start` message indicates the start of the computation, and causes the mandelbrot agent to create row agents and assign work to them.  The `row-result` message indicates that a row of iteration counts has been completed by a row agent.  The state data for a mandelbrot agent is a map of unique ids (representing computations) to a vector containing the received row results for the computation.
 
 Example of creating a mandelbrot agent and starting a computation (this assumes the REPL is in the `clojure-mandelbrot.mandelbrotagent` namespace):
 
