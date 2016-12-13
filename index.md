@@ -20,6 +20,7 @@ This is the website for CS 340, Fall 2016 at York College.  All information abou
 
 ## News
 
+* **Dec 13** &mdash; A practice final exam has been posted on the [Practice Exams](practice/index.html) page.
 * **Dec 6** &mdash; [Assignment 8](assign/assign08.html) has been updated to include the correct version of `prettyprint.clj`.
 * **Nov 29** &mdash; [Assignment 8](assign/assign08.html) has been posted, due Tuesday, Dec 13th by 11:59 PM.
 * **Nov 29** &mdash; The due date for [Assignment 7](assign/assign07.html) has been changed to Tuesday, Dec 6th by 11:59 PM.
